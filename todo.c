@@ -1,6 +1,8 @@
-#pragma once
-
-#define WIN_INIT_W 1280
-#define WIN_INIT_H 720
-
-#define BG_COLOR (LfColor){6, 6, 6, 255}
+#include <GL/gl.h>
+#include <GLFW/glfw3.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <leif/leif.h>
+#include <stdint.h>
+#include <string.h>
