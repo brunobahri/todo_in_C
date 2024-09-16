@@ -7,6 +7,7 @@
 #include <stdint.h>
 #include <string.h>
 
+#include "config.h"
 
 typedef enum {
   FILTER_ALL = 0,
