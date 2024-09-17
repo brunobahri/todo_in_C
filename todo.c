@@ -22,3 +22,10 @@ typedef enum {
   TAB_DASHBOARD = 0,
   TAB_NEW_TASK
 } tab;
+
+typedef enum {
+  PRIORITY_LOW = 0,
+  PRIORITY_MEDIUM,
+  PRIORITY_HIGH, 
+  PRIORITY_COUNT
+} entry_priority;
