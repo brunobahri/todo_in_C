@@ -36,3 +36,8 @@ typedef struct {
 
   entry_priority priority;
 } todo_entry;
+
+typedef struct {
+  todo_entry** entries;
+  uint32_t count, cap;
+} entries_da;
