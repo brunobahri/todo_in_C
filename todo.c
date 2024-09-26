@@ -29,3 +29,10 @@ typedef enum {
   PRIORITY_HIGH, 
   PRIORITY_COUNT
 } entry_priority;
+
+typedef struct {
+  bool completed;
+  char* desc, *date;
+
+  entry_priority priority;
+} todo_entry;
