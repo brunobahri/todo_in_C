@@ -7,3 +7,6 @@
 
 #define FONT "/usr/share/todo/fonts/inter.ttf"
 #define FONT_BOLD "/usr/share/todo/fonts/inter-bold.ttf"
+
+#define TODO_DATA_DIR getenv("HOME")
+#define TODO_DATA_FILE ".tododata"
