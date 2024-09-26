@@ -41,3 +41,22 @@ typedef struct {
   todo_entry** entries;
   uint32_t count, cap;
 } entries_da;
+
+typedef struct {
+  GLFWwindow* win;
+  int32_t winw, winh;
+
+  todo_filter crnt_filter;
+  tab crnt_tab;
+  entries_da todo_entries;
+
+  LfFont titlefont, smallfont;
+
+  LfInputField new_task_input;
+  char new_task_input_buf[INPUT_BUF_SIZE];
+  LfTexture backicon, removeicon, raiseicon;
+
+  FILE* serialization_file;
+
+  char tododata_file[128];
+} state;
