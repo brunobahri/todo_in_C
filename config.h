@@ -10,3 +10,5 @@
 
 #define TODO_DATA_DIR getenv("HOME")
 #define TODO_DATA_FILE ".tododata"
+
+#define BACK_ICON "/usr/share/todo/icons/back.png"
