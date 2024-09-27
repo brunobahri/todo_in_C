@@ -12,3 +12,4 @@
 #define TODO_DATA_FILE ".tododata"
 
 #define BACK_ICON "/usr/share/todo/icons/back.png"
+
