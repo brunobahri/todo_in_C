@@ -16,3 +16,4 @@
 #define RAISE_ICON "/usr/share/todo/icons/raise.png"
 
 #define GLOBAL_MARGIN 25.0f
+#define INPUT_BUF_SIZE 512
