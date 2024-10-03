@@ -19,3 +19,9 @@
 #define INPUT_BUF_SIZE 512
 
 #define SECONDARY_COLOR (LfColor){65, 167, 204, 255} 
+
+#define DA_INIT_CAP 64 
+
+#define SMOOTH_SCROLL false
+
+#define DATE_CMD "date +\"%d.%m.%Y, %H:%M\""
