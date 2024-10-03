@@ -70,3 +70,14 @@ static void         initwin();
 static void         initui();
 static void         initentries();
 static void         terminate();
+
+static void         renderdashboard();
+static void         rendernewtask();
+
+static void         entries_da_init(entries_da* da);
+static void         entries_da_resize(entries_da* da, int32_t new_cap);
+static void         entries_da_push(entries_da* da, todo_entry* entry);  
+static void         entries_da_remove_i(entries_da* da, uint32_t i); 
+static void         entries_da_free(entries_da* da); 
+
+
