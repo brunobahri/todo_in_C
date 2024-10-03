@@ -61,3 +61,12 @@ typedef struct {
   char tododata_file[128];
 } state;
 
+static void         resizecb(GLFWwindow* win, int32_t w, int32_t h);
+static void         rendertopbar();
+static void         renderfilters();
+static void         renderentries();
+
+static void         initwin();
+static void         initui();
+static void         initentries();
+static void         terminate();
