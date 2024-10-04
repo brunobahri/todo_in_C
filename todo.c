@@ -84,3 +84,8 @@ static int          compare_entry_priority(const void* a, const void* b);
 static void         sort_entries_by_priority(entries_da* da);
 
 static char*        get_command_output(const char* cmd);
+
+static void         serialize_todo_entry(FILE* file, todo_entry* entry);
+static void         serialize_todo_list(const char* filename, entries_da* da);
+static todo_entry*  deserialize_todo_entry(FILE* file);
+static void         deserialize_todo_list(const char* filename, entries_da* da);
