@@ -80,4 +80,7 @@ static void         entries_da_push(entries_da* da, todo_entry* entry);
 static void         entries_da_remove_i(entries_da* da, uint32_t i); 
 static void         entries_da_free(entries_da* da); 
 
+static int          compare_entry_priority(const void* a, const void* b);
+static void         sort_entries_by_priority(entries_da* da);
 
+static char*        get_command_output(const char* cmd);
