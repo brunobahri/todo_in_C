@@ -94,3 +94,5 @@ static void         print_requires_argument(const char* option, uint32_t numargs
 static void         str_to_lower(char* str);
 
 static state s;
+
+
