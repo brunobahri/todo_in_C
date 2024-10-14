@@ -25,3 +25,4 @@
 #define SMOOTH_SCROLL false
 
 #define DATE_CMD "date +\"%d.%m.%Y, %H:%M\""
+
