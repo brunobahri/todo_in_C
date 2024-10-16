@@ -95,6 +95,12 @@ static void         str_to_lower(char* str);
 
 static state s;
 
-
+void 
+resizecb(GLFWwindow* win, int32_t w, int32_t h) {
+  s.winw = w;
+  s.winh = h;
+  lf_resize_display(w, h);
+  glViewport(0, 0, w, h);
+}
 
 
