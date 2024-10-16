@@ -115,4 +115,28 @@ rendertopbar() {
   }
   lf_pop_font();
 
+// Button
+  {
+    const char* text = "New Task";
+    const float width = 150.0f;
+
+    // UI Properties
+    LfUIElementProps props = lf_get_theme().button_props;
+    props.border_width = 0.0f;
+    props.margin_top = 0.0f;
+    props.color = SECONDARY_COLOR;
+    props.corner_radius = 4.0f;
+    lf_push_style_props(props);
+    lf_set_ptr_x_absolute(s.winw - width - GLOBAL_MARGIN * 2.0f);
+
+    // Button
+    lf_set_line_should_overflow(false); 
+    if(lf_button_fixed("New Task", width, -1) == LF_CLICKED) {
+      s.crnt_tab = TAB_NEW_TASK;
+    }
+    lf_set_line_should_overflow(true);
+
+    lf_pop_style_props();
+  }
+}
 
