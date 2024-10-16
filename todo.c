@@ -103,4 +103,16 @@ resizecb(GLFWwindow* win, int32_t w, int32_t h) {
   glViewport(0, 0, w, h);
 }
 
+void 
+rendertopbar() {
+  // Title
+  lf_push_font(&s.titlefont);
+  {
+    LfUIElementProps props = lf_get_theme().text_props;
+    lf_push_style_props(props);
+    lf_text("Your To Do");
+    lf_pop_style_props();
+  }
+  lf_pop_font();
+
 
