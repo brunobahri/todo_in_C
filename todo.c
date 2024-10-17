@@ -148,3 +148,14 @@ renderfilters() {
     "ALL", "IN PROGRESS", "COMPLETED", "LOW", "MEDIUM", "HIGH"
   };
 
+  // UI Properties
+  LfUIElementProps props = lf_get_theme().button_props;
+  props.margin_left = 10.0f;
+  props.margin_right = 10.0f;
+  props.margin_top = 20.0f;
+  props.padding = 10.0f;
+  props.border_width = 0.0f;
+  props.color = LF_NO_COLOR;
+  props.corner_radius = 8.0f;
+  props.text_color = LF_WHITE;
+
