@@ -159,3 +159,21 @@ renderfilters() {
   props.corner_radius = 8.0f;
   props.text_color = LF_WHITE;
 
+  lf_push_font(&s.smallfont);
+
+  // Calculating width
+  float width = 0.0f;
+  {
+    float ptrx_before = lf_get_ptr_x();
+    lf_push_style_props(props);
+    lf_set_cull_end_x(s.winw);
+    lf_set_cull_end_y(s.winh);
+    lf_set_no_render(true);
+    for(uint32_t i = 0; i < itemcount; i++) {
+      lf_button(items[i]);
+    }
+    lf_unset_cull_end_x();
+    lf_unset_cull_end_y();
+    lf_set_no_render(false);
+    width = lf_get_ptr_x() - ptrx_before - props.margin_right - props.padding;
+  }
