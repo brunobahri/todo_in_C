@@ -140,3 +140,11 @@ rendertopbar() {
   }
 }
 
+void 
+renderfilters() {
+  // Filters 
+  uint32_t itemcount = 6;
+  static const char* items[] = {
+    "ALL", "IN PROGRESS", "COMPLETED", "LOW", "MEDIUM", "HIGH"
+  };
+
