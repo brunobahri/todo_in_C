@@ -183,3 +183,10 @@ renderfilters() {
   // Rendering the filter items
   lf_set_line_should_overflow(false);
   for(uint32_t i = 0; i < itemcount; i++) {
+    // If the filter is currently selected, render a 
+    // box around it to indicate selection.
+    if(s.crnt_filter == (uint32_t)i) {
+      props.color = (LfColor){255, 255, 255, 50};
+    } else {
+      props.color = LF_NO_COLOR;
+    }
