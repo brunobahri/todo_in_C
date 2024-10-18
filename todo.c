@@ -177,3 +177,9 @@ renderfilters() {
     lf_set_no_render(false);
     width = lf_get_ptr_x() - ptrx_before - props.margin_right - props.padding;
   }
+
+  lf_set_ptr_x_absolute(s.winw - width - GLOBAL_MARGIN);
+
+  // Rendering the filter items
+  lf_set_line_should_overflow(false);
+  for(uint32_t i = 0; i < itemcount; i++) {
