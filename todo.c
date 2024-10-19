@@ -208,4 +208,15 @@ renderentries() {
   lf_div_begin(((vec2s){lf_get_ptr_x(), lf_get_ptr_y()}), 
                ((vec2s){(s.winw - lf_get_ptr_x()) - GLOBAL_MARGIN, (s.winh - lf_get_ptr_y()) - GLOBAL_MARGIN}), 
                true);
+  uint32_t renderedcount = 0;
+  for(uint32_t i = 0; i < s.todo_entries.count; i++) {
+    todo_entry* entry = s.todo_entries.entries[i];
+    // Filtering the entries
+    if(s.crnt_filter == FILTER_COMPLETED && !entry->completed) continue;
+    if(s.crnt_filter == FILTER_IN_PROGRESS && entry->completed) continue;
+    if(s.crnt_filter == FILTER_LOW && entry->priority != PRIORITY_LOW) continue;
+    if(s.crnt_filter == FILTER_MEDIUM && entry->priority != PRIORITY_MEDIUM) continue;
+    if(s.crnt_filter == FILTER_HIGH && entry->priority != PRIORITY_HIGH) continue;
+
+    {
 
