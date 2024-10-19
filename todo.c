@@ -190,3 +190,16 @@ renderfilters() {
     } else {
       props.color = LF_NO_COLOR;
     }
+    // Rendering the button
+    lf_push_style_props(props);
+    if(lf_button(items[i]) == LF_CLICKED) {
+      s.crnt_filter = i;
+    }
+    lf_pop_style_props();
+    }
+  // Popping props
+  lf_set_line_should_overflow(true);
+  lf_pop_style_props();
+  lf_pop_font();
+}
+
