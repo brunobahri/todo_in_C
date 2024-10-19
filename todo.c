@@ -203,3 +203,9 @@ renderfilters() {
   lf_pop_font();
 }
 
+void 
+renderentries() {
+  lf_div_begin(((vec2s){lf_get_ptr_x(), lf_get_ptr_y()}), 
+               ((vec2s){(s.winw - lf_get_ptr_x()) - GLOBAL_MARGIN, (s.winh - lf_get_ptr_y()) - GLOBAL_MARGIN}), 
+               true);
+
