@@ -269,4 +269,5 @@ renderentries() {
       LfUIElementProps props = lf_get_theme().button_props;
       props.color = LF_NO_COLOR;
       props.border_width = 0.0f; props.padding = 0.0f; props.margin_left = 0.0f; props.margin_right = 0.0f;
+      lf_push_style_props(props);
 
