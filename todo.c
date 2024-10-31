@@ -251,4 +251,15 @@ renderentries() {
       }
       lf_set_ptr_y_absolute(ptry_before);
     }
+    {
+      LfUIElementProps props = lf_get_theme().button_props;
+      props.color = LF_NO_COLOR;
+      props.border_width = 0.0f; props.padding = 0.0f; props.margin_top = 13; props.margin_left = 10.0f;
+      lf_push_style_props(props);
+      if(lf_image_button(((LfTexture){.id = s.removeicon.id, .width = 20, .height = 20})) == LF_CLICKED) {
+        entries_da_remove_i(&s.todo_entries, i);
+        serialize_todo_list(s.tododata_file, &s.todo_entries);
+      }
+      lf_pop_style_props();
+    }
 
