@@ -270,4 +270,5 @@ renderentries() {
       props.color = LF_NO_COLOR;
       props.border_width = 0.0f; props.padding = 0.0f; props.margin_left = 0.0f; props.margin_right = 0.0f;
       lf_push_style_props(props);
+      lf_set_image_color((LfColor){120, 120, 120, 255});
 
