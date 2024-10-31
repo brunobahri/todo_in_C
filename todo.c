@@ -262,4 +262,6 @@ renderentries() {
       }
       lf_pop_style_props();
     }
+    {
+      uint32_t texw = 15, texh = 8;
 
