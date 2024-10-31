@@ -266,4 +266,5 @@ renderentries() {
       uint32_t texw = 15, texh = 8;
       lf_set_ptr_x_absolute(s.winw - GLOBAL_MARGIN - texw);
       lf_set_line_should_overflow(false);
+      LfUIElementProps props = lf_get_theme().button_props;
 
