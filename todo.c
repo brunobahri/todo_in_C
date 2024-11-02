@@ -283,3 +283,5 @@ renderentries() {
     }
 
     lf_next_line();
+    renderedcount++;
+  }
