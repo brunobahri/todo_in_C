@@ -279,3 +279,5 @@ renderentries() {
       }
       lf_unset_image_color();
       lf_set_line_should_overflow(true);
+      lf_pop_style_props();
+    }
