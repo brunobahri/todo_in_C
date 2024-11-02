@@ -277,3 +277,4 @@ renderentries() {
         s.todo_entries.entries[i] = tmp;
         serialize_todo_list(s.tododata_file, &s.todo_entries);
       }
+      lf_unset_image_color();
