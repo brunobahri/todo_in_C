@@ -274,3 +274,4 @@ renderentries() {
       if(lf_image_button(((LfTexture){.id = s.raiseicon.id, .width = texw, .height = texh})) == LF_CLICKED) {
         todo_entry* tmp = s.todo_entries.entries[0];
         s.todo_entries.entries[0] = entry;
+        s.todo_entries.entries[i] = tmp;
