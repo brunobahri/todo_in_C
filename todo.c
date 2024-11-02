@@ -281,3 +281,5 @@ renderentries() {
       lf_set_line_should_overflow(true);
       lf_pop_style_props();
     }
+
+    lf_next_line();
