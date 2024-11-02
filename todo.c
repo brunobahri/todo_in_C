@@ -275,3 +275,4 @@ renderentries() {
         todo_entry* tmp = s.todo_entries.entries[0];
         s.todo_entries.entries[0] = entry;
         s.todo_entries.entries[i] = tmp;
+        serialize_todo_list(s.tododata_file, &s.todo_entries);
