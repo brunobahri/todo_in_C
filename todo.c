@@ -273,3 +273,4 @@ renderentries() {
       lf_set_image_color((LfColor){120, 120, 120, 255});
       if(lf_image_button(((LfTexture){.id = s.raiseicon.id, .width = texw, .height = texh})) == LF_CLICKED) {
         todo_entry* tmp = s.todo_entries.entries[0];
+        s.todo_entries.entries[0] = entry;
