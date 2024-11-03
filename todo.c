@@ -291,3 +291,6 @@ renderentries() {
    
    lf_div_end();
 }
+
+void 
+initwin() {
