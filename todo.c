@@ -286,3 +286,5 @@ renderentries() {
     renderedcount++;
   }
   if(!renderedcount) {
+    lf_text("There is nothing here.");
+  }
