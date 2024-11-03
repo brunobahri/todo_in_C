@@ -309,3 +309,5 @@ initwin() {
 
 void
 initui() {
+  // Initializing fonts
+  s.titlefont = lf_load_font(FONT_BOLD, 40);
