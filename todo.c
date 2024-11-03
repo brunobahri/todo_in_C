@@ -300,3 +300,9 @@ initwin() {
   // Setting base window width
   s.winw = WIN_INIT_W;
   s.winh = WIN_INIT_H;
+  // Creating & initializing window and UI library
+  s.win = glfwCreateWindow(s.winw, s.winh, "todo", NULL, NULL);
+  glfwMakeContextCurrent(s.win);
+  glfwSetFramebufferSizeCallback(s.win, resizecb);
+  lf_init_glfw(s.winw, s.winh, s.win);
+}
