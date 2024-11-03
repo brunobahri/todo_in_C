@@ -288,3 +288,6 @@ renderentries() {
   if(!renderedcount) {
     lf_text("There is nothing here.");
   }
+   
+   lf_div_end();
+}
