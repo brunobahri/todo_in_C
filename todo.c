@@ -308,3 +308,4 @@ initwin() {
 }
 
 void
+initui() {
