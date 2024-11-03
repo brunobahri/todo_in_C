@@ -294,3 +294,9 @@ renderentries() {
 
 void 
 initwin() {
+  / Initialize GLFW
+  glfwInit();
+
+  // Setting base window width
+  s.winw = WIN_INIT_W;
+  s.winh = WIN_INIT_H;
