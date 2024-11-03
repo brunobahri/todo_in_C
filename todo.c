@@ -306,3 +306,5 @@ initwin() {
   glfwSetFramebufferSizeCallback(s.win, resizecb);
   lf_init_glfw(s.winw, s.winh, s.win);
 }
+
+void
