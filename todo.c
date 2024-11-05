@@ -324,3 +324,6 @@ initui() {
   theme.scrollbar_props.color = lf_color_brightness(BG_COLOR, 3.0);
   theme.div_smooth_scroll = SMOOTH_SCROLL;
   lf_set_theme(theme);
+
+  // Initializing retained state
+  memset(s.new_task_input_buf, 0, INPUT_BUF_SIZE);
