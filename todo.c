@@ -322,3 +322,4 @@ initui() {
   theme.font = lf_load_font(FONT, 24);
   theme.scrollbar_props.corner_radius = 2;
   theme.scrollbar_props.color = lf_color_brightness(BG_COLOR, 3.0);
+  theme.div_smooth_scroll = SMOOTH_SCROLL;
