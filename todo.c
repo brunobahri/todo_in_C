@@ -319,3 +319,4 @@ initui() {
   LfTheme theme = lf_get_theme();
   theme.div_props.color = LF_NO_COLOR;
   lf_free_font(&theme.font);
+  theme.font = lf_load_font(FONT, 24);
