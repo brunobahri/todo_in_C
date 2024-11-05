@@ -327,3 +327,4 @@ initui() {
 
   // Initializing retained state
   memset(s.new_task_input_buf, 0, INPUT_BUF_SIZE);
+  s.new_task_input = (LfInputField){
