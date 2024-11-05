@@ -314,3 +314,6 @@ initui() {
   s.smallfont = lf_load_font(FONT, 20);
 
   s.crnt_filter = FILTER_ALL;
+
+  // Initializing base theme
+  LfTheme theme = lf_get_theme();
