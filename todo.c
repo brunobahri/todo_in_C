@@ -330,3 +330,4 @@ initui() {
   s.new_task_input = (LfInputField){
     .width = 400,
     .buf = s.new_task_input_buf,
+    .buf_size = INPUT_BUF_SIZE,
