@@ -333,3 +333,5 @@ initui() {
     .buf_size = INPUT_BUF_SIZE,
     .placeholder = (char*)"What is there to do?"
   };
+
+  s.backicon = lf_load_texture(BACK_ICON, true, LF_TEX_FILTER_LINEAR);
