@@ -336,3 +336,4 @@ initui() {
 
   s.backicon = lf_load_texture(BACK_ICON, true, LF_TEX_FILTER_LINEAR);
   s.removeicon = lf_load_texture(REMOVE_ICON, true, LF_TEX_FILTER_LINEAR);
+  s.raiseicon = lf_load_texture(RAISE_ICON, true, LF_TEX_FILTER_LINEAR);
