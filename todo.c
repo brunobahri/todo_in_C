@@ -354,3 +354,7 @@ void
 terminate() {
   // Terminate UI library
   lf_terminate();
+
+  // Freeing allocated resources
+  lf_free_font(&s.smallfont);
+  lf_free_font(&s.titlefont);
