@@ -339,3 +339,6 @@ initui() {
   s.raiseicon = lf_load_texture(RAISE_ICON, true, LF_TEX_FILTER_LINEAR);
   initentries();
 }
+
+void
+  initentries() {
