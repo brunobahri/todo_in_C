@@ -342,3 +342,4 @@ initui() {
 
 void
   initentries() {
+    strcat(s.tododata_file, TODO_DATA_DIR);
