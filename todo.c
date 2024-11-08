@@ -344,3 +344,4 @@ void
   initentries() {
     strcat(s.tododata_file, TODO_DATA_DIR);
     strcat(s.tododata_file, "/");
+    strcat(s.tododata_file, TODO_DATA_FILE);
