@@ -345,3 +345,7 @@ void
     strcat(s.tododata_file, TODO_DATA_DIR);
     strcat(s.tododata_file, "/");
     strcat(s.tododata_file, TODO_DATA_FILE);
+
+    entries_da_init(&s.todo_entries);
+    deserialize_todo_list(s.tododata_file, &s.todo_entries);
+  }
