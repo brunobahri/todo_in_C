@@ -352,3 +352,5 @@ void
 
 void 
 terminate() {
+  // Terminate UI library
+  lf_terminate();
