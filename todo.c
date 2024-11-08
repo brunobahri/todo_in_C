@@ -349,3 +349,6 @@ void
     entries_da_init(&s.todo_entries);
     deserialize_todo_list(s.tododata_file, &s.todo_entries);
   }
+
+void 
+terminate() {
