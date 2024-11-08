@@ -358,3 +358,4 @@ terminate() {
   // Freeing allocated resources
   lf_free_font(&s.smallfont);
   lf_free_font(&s.titlefont);
+  entries_da_free(&s.todo_entries); 
