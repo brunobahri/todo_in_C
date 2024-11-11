@@ -368,3 +368,4 @@ terminate() {
 void 
 renderdashboard() {
   rendertopbar();
+  lf_next_line();
