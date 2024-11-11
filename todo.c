@@ -371,3 +371,5 @@ renderdashboard() {
   lf_next_line();
   renderfilters();
   lf_next_line();
+  renderentries();
+}
