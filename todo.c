@@ -364,4 +364,6 @@ terminate() {
   glfwDestroyWindow(s.win);
    glfwTerminate();
 }
-  
+
+void 
+renderdashboard() {
