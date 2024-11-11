@@ -367,3 +367,4 @@ terminate() {
 
 void 
 renderdashboard() {
+  rendertopbar();
