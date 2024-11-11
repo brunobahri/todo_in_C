@@ -362,4 +362,6 @@ terminate() {
 
   // Terminate Windowing
   glfwDestroyWindow(s.win);
+   glfwTerminate();
+}
   
