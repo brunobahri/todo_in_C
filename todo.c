@@ -369,3 +369,5 @@ void
 renderdashboard() {
   rendertopbar();
   lf_next_line();
+  renderfilters();
+  lf_next_line();
