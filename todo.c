@@ -388,3 +388,7 @@ rendernewtask() {
   }
 
   lf_next_line();
+
+  // Description input field 
+  {
+    lf_push_font(&s.smallfont);
