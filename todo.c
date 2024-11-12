@@ -386,3 +386,5 @@ rendernewtask() {
     lf_pop_style_props();
     lf_pop_font();
   }
+
+  lf_next_line();
