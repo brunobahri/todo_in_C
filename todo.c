@@ -384,4 +384,5 @@ rendernewtask() {
     lf_push_style_props(props);
     lf_text("Add a new Task");
     lf_pop_style_props();
-    
+    lf_pop_font();
+  }
