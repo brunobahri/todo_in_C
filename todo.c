@@ -379,3 +379,6 @@ rendernewtask() {
   // Title
   lf_push_font(&s.titlefont);
   {
+    LfUIElementProps props = lf_get_theme().text_props;
+    props.margin_bottom = 15.0f;
+    
