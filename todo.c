@@ -383,3 +383,5 @@ rendernewtask() {
     props.margin_bottom = 15.0f;
     lf_push_style_props(props);
     lf_text("Add a new Task");
+    lf_pop_style_props();
+    
