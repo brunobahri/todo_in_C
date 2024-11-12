@@ -392,3 +392,4 @@ rendernewtask() {
   // Description input field 
   {
     lf_push_font(&s.smallfont);
+    lf_text("Description");
