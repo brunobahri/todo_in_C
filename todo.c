@@ -373,3 +373,6 @@ renderdashboard() {
   lf_next_line();
   renderentries();
 }
+
+void 
+rendernewtask() {
