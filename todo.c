@@ -381,4 +381,5 @@ rendernewtask() {
   {
     LfUIElementProps props = lf_get_theme().text_props;
     props.margin_bottom = 15.0f;
-    
+    lf_push_style_props(props);
+    lf_text("Add a new Task");
