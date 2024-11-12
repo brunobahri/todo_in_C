@@ -376,3 +376,6 @@ renderdashboard() {
 
 void 
 rendernewtask() {
+  // Title
+  lf_push_font(&s.titlefont);
+  {
