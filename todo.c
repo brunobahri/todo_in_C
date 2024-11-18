@@ -399,3 +399,4 @@ rendernewtask() {
     LfUIElementProps props = lf_get_theme().inputfield_props;
     props.padding = 15;]
     props.border_width = 0;
+    props.color = BG_COLOR;
