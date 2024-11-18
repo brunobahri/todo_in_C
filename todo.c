@@ -400,3 +400,4 @@ rendernewtask() {
     props.padding = 15;]
     props.border_width = 0;
     props.color = BG_COLOR;
+    props.corner_radius = 11;
