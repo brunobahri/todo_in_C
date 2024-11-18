@@ -397,3 +397,4 @@ rendernewtask() {
 
     lf_next_line();
     LfUIElementProps props = lf_get_theme().inputfield_props;
+    props.padding = 15;
