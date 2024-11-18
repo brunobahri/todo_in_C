@@ -402,3 +402,4 @@ rendernewtask() {
     props.color = BG_COLOR;
     props.corner_radius = 11;
     props.text_color = LF_WHITE;
+    props.border_width = 1.0f;
