@@ -393,3 +393,4 @@ rendernewtask() {
   {
     lf_push_font(&s.smallfont);
     lf_text("Description");
+    lf_pop_font();
