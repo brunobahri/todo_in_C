@@ -403,3 +403,4 @@ rendernewtask() {
     props.corner_radius = 11;
     props.text_color = LF_WHITE;
     props.border_width = 1.0f;
+    props.border_color = s.new_task_input.selected ? LF_WHITE : (LfColor){170, 170, 170, 255};
