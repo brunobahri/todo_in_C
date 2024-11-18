@@ -396,3 +396,4 @@ rendernewtask() {
     lf_pop_font();
 
     lf_next_line();
+    LfUIElementProps props = lf_get_theme().inputfield_props;
