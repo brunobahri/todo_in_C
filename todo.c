@@ -449,4 +449,11 @@ rendernewtask() {
     lf_push_font(&s.smallfont);
     lf_text("Priority");
     lf_pop_font();
+
+    lf_next_line();
+    static const char* items[3] = {
+      "Low",
+      "Medium",
+      "High"
+    };
   }
