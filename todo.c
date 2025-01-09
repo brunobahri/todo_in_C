@@ -406,5 +406,21 @@ rendernewtask() {
     props.border_color = s.new_task_input.selected ? LF_WHITE : (LfColor){170, 170, 170, 255};
     props.corner_radius = 2.5f;
     props.margin_bottom = 10.0f;
-    
+    lf_push_style_props(props);
+    lf_inputfield(&s.new_task_input);
+    lf_pop_style_props();
+  }
 
+  lf_next_line(); 
+
+  lf_next_line();
+
+  static int32_t selected_priority = -1;
+  {
+    lf_push_font(&s.smallfont);
+    lf_text("Priority");
+    lf_pop_font();
+    
+  }
+
+  lf_next_line();
